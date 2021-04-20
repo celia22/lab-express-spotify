@@ -1,1 +1,9 @@
-<p>TESTING</p>
+<h1>Album by Artist</h1>
+{{#each albums}}
+<ul>
+  <li>{{this.name}}</li>
+  <br>
+  <img src="{{this.images.0.url}}" alt="cover image">
+  <a href="/tracks/{{this.id}}">View Tracks</a>
+</ul>
+{{/each}}

@@ -81,7 +81,7 @@ const SpotifyWebApi = require('spotify-web-api-node');
 ```javascript
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.CLIENT_ID,
-  clientSecret: process.env.CLIENT_SECRET
+  clientSecret: process.env.CLIENT_SECRET,
 });
 
 // Retrieve an access token
@@ -96,7 +96,7 @@ spotifyApi
 ```js
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.CLIENT_ID,
-  clientSecret: process.env.CLIENT_SECRET
+  clientSecret: process.env.CLIENT_SECRET,
 });
 ```
 
