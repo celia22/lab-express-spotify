@@ -1,7 +1,13 @@
 <h1>Tracks by Album </h1>
+<div class="content_collection_container"></div>
 {{#each tracks}}
 <ul>
-  <li>{{this.name}}</li>
-  <li>{{this.preview_url}}</li>
+  <li>{{ this.name }}</td>
+    {{#if this.preview_url}}
+  <li><audio controls src="{{ this.preview_url }}"></audio></li>
+  {{else }}
+  <li> No audio preview available </li>
+  {{/if }}
 </ul>
 {{/each}}
+</div>

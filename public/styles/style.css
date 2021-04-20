@@ -1,3 +1,96 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+}
+
 body {
-  background-image: url(/images/spotify-background.jpeg);
+  background-image: url(../images/spotify-background.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin-left: 3rem;
+}
+
+#searchform_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  /* opacity: 0.5; */
+  display: flex;
+  justify-content: center;
+  /* margin: 250px 370px; */
+}
+
+#searchform {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#searchform_input {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  opacity: 1;
+  color: black;
+  font-size: 18px;
+  margin: 50px;
+  border: 1px solid grey;
+  border-radius: 3%;
+}
+
+#searchform_input_button {
+  width: 200px;
+  height: 40px;
+  color: white;
+  font-weight: 900;
+  background-color: tomato;
+  opacity: 1;
+  border: none;
+}
+
+.content_collection_container {
+  background-color: white;
+}
+
+.content_collection_unit {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_collection_container li {
+  list-style: none;
+}
+
+.content_collection_image {
+  width: 330px;
+  height: 330px;
+}
+
+.btn {
+  width: 120px;
+  height: 70px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
 }

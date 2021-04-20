@@ -1,8 +1,14 @@
-{{#each artist}}
-<ul>
-  <li>{{this.name}}</li>
-  <br>
-  <img src="{{this.images.0.url}}" alt="image">
-  <a href="/albums/{{this.id}}">View Albums</a>
-</ul>
-{{/each}}
+<div class="content_collection_container">
+  <h1>Search by Artist</h1>
+  <div class="content_collection_unit">
+    {{#each artist}}
+    <ul>
+      <li>{{this.name}}</li>
+      <br>
+      <img class="content_collection_image" src="{{this.images.0.url}}" alt="artist image">
+      <br>
+      <a class="btn" href="/albums/{{this.id}}">View Albums</a>
+    </ul>
+    {{/each}}
+  </div>
+</div>
