@@ -1,14 +1,14 @@
 <div class="content_collection_container">
   <h1>Album by Artist</h1>
-  <div class="content_collection_unit"></div>
-  {{#each albums}}
-  <ul>
-    <li>{{this.name}}</li>
-    <br>
-    <img class="content_collection_image" src="{{this.images.0.url}}" alt="cover image">
-    <br>
-    <a class="btn" href="/tracks/{{this.id}}">View Tracks</a>
-  </ul>
-  {{/each}}
-</div>
+  <div class="content_collection_card">
+    {{#each albums}}
+    <ul>
+      <li class="content_collection_card_name">{{this.name}}</li>
+      <br>
+      <img class="content_collection_image" src="{{this.images.0.url}}" alt="cover image">
+      <br>
+      <a class="btn" href="/tracks/{{this.id}}">View Tracks</a>
+    </ul>
+    {{/each}}
+  </div>
 </div>

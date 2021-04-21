@@ -1,9 +1,9 @@
 <div class="content_collection_container">
   <h1>Search by Artist</h1>
-  <div class="content_collection_unit">
+  <div class="content_collection_card">
     {{#each artist}}
     <ul>
-      <li>{{this.name}}</li>
+      <li class="content_collection_card_name">{{this.name}}</li>
       <br>
       <img class="content_collection_image" src="{{this.images.0.url}}" alt="artist image">
       <br>

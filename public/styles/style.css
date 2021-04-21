@@ -5,7 +5,7 @@ html {
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: 900;
-  color: black;
+  color: white;
 }
 
 body {
@@ -24,18 +24,17 @@ h1 {
   margin-left: 3rem;
 }
 
-#searchform_container {
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#searchform_container {
   width: 600px;
   height: 250px;
-  background-color: white;
-  /* opacity: 0.5; */
-  display: flex;
-  justify-content: center;
-  /* margin: 250px 370px; */
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 #searchform {
@@ -54,7 +53,7 @@ h1 {
   font-size: 18px;
   margin: 50px;
   border: 1px solid grey;
-  border-radius: 3%;
+  border-radius: 7%;
 }
 
 #searchform_input_button {
@@ -65,32 +64,48 @@ h1 {
   background-color: tomato;
   opacity: 1;
   border: none;
+  border-radius: 5%;
 }
 
 .content_collection_container {
-  background-color: white;
+  background-color: black;
 }
 
-.content_collection_unit {
+.content_collection_card {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  padding: 50px;
+  background-color: rgb(58, 56, 56);
+  color: white;
+  margin-bottom: 50px;
 }
 
 .content_collection_container li {
   list-style: none;
 }
 
+.content_collection_card_name {
+  font-size: 20px;
+  padding: 5px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3%;
+}
+
 .content_collection_image {
   width: 330px;
   height: 330px;
+  border-radius: 3%;
 }
 
 .btn {
   width: 120px;
+  padding: 5px;
   height: 70px;
   color: white;
   background-color: black;
   text-decoration: none;
+  margin-top: 10px;
 }
